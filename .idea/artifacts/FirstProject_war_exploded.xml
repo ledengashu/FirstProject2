@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="FirstProject:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/FirstProject_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="FirstProject/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="FirstProject" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="JUnit4" module-name="FirstProject" />
+          <element id="file-copy" path="$PROJECT_DIR$/../tomcat/web/WEB-INF/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../tomcat/web/WEB-INF/lib/standard.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../untitled/web/WEB-INF/Lib/mysql-connector-java-8.0.13.jar" />
+          <element id="library" level="application_server_libraries" name="Tomcat 8.5.30" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
