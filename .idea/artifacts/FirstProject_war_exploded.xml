@@ -13,6 +13,8 @@
           <element id="file-copy" path="$PROJECT_DIR$/../tomcat/web/WEB-INF/lib/standard.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../untitled/web/WEB-INF/Lib/mysql-connector-java-8.0.13.jar" />
           <element id="library" level="application_server_libraries" name="Tomcat 8.5.30" />
+          <element id="file-copy" path="$PROJECT_DIR$/../tomcat/web/WEB-INF/lib/fileupload/commons-io-2.5.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../tomcat/web/WEB-INF/lib/fileupload/commons-fileupload-1.3.3.jar" />
         </element>
       </element>
     </root>

@@ -13,11 +13,81 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>registerServlet</servlet-name>
-        <servlet-class>com.servlet.RegisterServlet</servlet-class>
-    </servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.servlet.RegisterServlet</servlet-class>
+</servlet>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsQueryServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsQueryServlet</servlet-name>
+        <url-pattern>/goodsQueryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsLoadDataServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsLoadDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsLoadDataServlet</servlet-name>
+        <url-pattern>/goodsLoadDataServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsUpdateServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsUpdateServlet</servlet-name>
+        <url-pattern>/goodsUpdateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>goodsDeleteServlet</servlet-name>
+    <servlet-class>com.servlet.GoodsDeleteServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>goodsDeleteServlet</servlet-name>
+        <url-pattern>/goodsDeleteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsInsertServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsInsertServlet</servlet-name>
+        <url-pattern>/goodsInsertServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>goodsViewServlet</servlet-name>
+        <servlet-class>com.servlet.GoodsViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>goodsViewServlet</servlet-name>
+        <url-pattern>/goodsViewServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置编码过滤器 -->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>cn.EncodingFilter</filter-class>
+        <!-- 初始化的参数 -->
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 </web-app>

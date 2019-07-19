@@ -49,5 +49,15 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../tomcat/web/WEB-INF/lib/fileupload" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../tomcat/web/WEB-INF/lib/fileupload" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

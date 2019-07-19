@@ -10,19 +10,6 @@
 <head>
     <title>注册页面</title>
     <script type="text/javascript">
-        function register() {
-            window.location.href = "registerServlet"
-            // var elementById = document.getElementById("username");
-            // var elementsByName = document.getElementsByName("password");
-            // if(elementById.value===""||elementsByName[0].value===""
-            //         ||elementsByName[1].value===""){
-            //     alert("用户名、密码、确认密码不能为空");
-            // }else if(elementsByName[0].value!=elementsByName[1].value){
-            //     alert("密码与确认密码不一致");
-            // }else{
-            //     alert("注册成功")
-            // }
-        }
     </script>
 </head>
 <body>
@@ -30,7 +17,16 @@
         请输入用户名：<input type="text" name="username"><br/>
         请输入密码：<input type="password" name="password"><br/>
         请确认密码：<input type="password" name="confirm"><br/>
-        <input type="submit" value="提交" name="register" onclick="register()">
+        性别：<select name="sex">
+            <option disabled selected>请选择</option>
+            <option>男</option>
+            <option>女</option>
+            </select><br/>
+        爱好：<input type="text" name="hobbys"><br/>
+        手机号码：<input type="text" name="phone"><br/>
+        电子邮箱：<input type="text" name="email"><br/>
+        地址：<input type="text" name="addrs"><br/>
+        <input type="submit" value="提交" name="register" >
     </form>
 </body>
 </html>

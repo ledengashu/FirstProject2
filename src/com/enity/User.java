@@ -11,6 +11,15 @@ public class User {
     private String addrs;
     private int flag;
 
+    public User(String username) {
+        this.username = username;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     public User(int id, String username, String password, String sex, String hobbys, String phone, String email, String addrs, int flag) {
         this.id = id;
         this.username = username;
@@ -21,6 +30,16 @@ public class User {
         this.email = email;
         this.addrs = addrs;
         this.flag = flag;
+    }
+
+    public User(String username, String password, String sex, String hobbys, String phone, String email, String addrs) {
+        this.username = username;
+        this.password = password;
+        this.sex = sex;
+        this.hobbys = hobbys;
+        this.phone = phone;
+        this.email = email;
+        this.addrs = addrs;
     }
 
     public User() {
